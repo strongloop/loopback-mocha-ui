@@ -1,5 +1,5 @@
 // Copyright IBM Corp. 2017. All Rights Reserved.
-// Node module: loopback-mocha-ui
+// Node module: strong-mocha-interfaces
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -49,7 +49,7 @@ module.exports = function(suites, context, file, skips, mocha) {
       suites.shift();
     },
 
-    describe_only: function(title, fn) {
+    describeOnly: function(title, fn) {
       var suite = context.describe(title, fn);
       mocha.grep(suite.fullTitle());
       return suite;
@@ -57,7 +57,7 @@ module.exports = function(suites, context, file, skips, mocha) {
 
     it: it,
 
-    it_only: function(title, fn) {
+    itOnly: function(title, fn) {
       var test = it(title, fn);
       var reString = '^' + escapeRe(test.fullTitle()) + '$';
       mocha.grep(new RegExp(reString));
@@ -68,7 +68,7 @@ module.exports = function(suites, context, file, skips, mocha) {
       it(title);
     },
 
-    it_retries: function(n) {
+    itRetries: function(n) {
       context.retries(n);
     }
   }
