@@ -1,0 +1,21 @@
+{
+  "name": "strong-mocha-interfaces",
+  "version": "1.0.0",
+  "description": "A Mocha interface that allows dynamic test skips via a gloabl variable",
+  "main": "strong-bdd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strongloop/strong-mocha-interfaces.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strongloop/strong-mocha-interfaces/issues"
+  },
+  "homepage": "https://github.com/strongloop/strong-mocha-interfaces#readme",
+  "dependencies": {
+    "escape-string-regexp": "^1.0.5"
+  }
+}
